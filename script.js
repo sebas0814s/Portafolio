@@ -5,8 +5,20 @@ const navbar    = document.getElementById('navbar');
 const hamburger = document.getElementById('hamburger');
 const navLinks  = document.querySelector('.nav-links');
 
+const scrollProgress = document.getElementById('scrollProgress');
+const backToTop      = document.getElementById('backToTop');
+
 window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 20);
+  const scrollTop  = window.scrollY;
+  const docHeight  = document.documentElement.scrollHeight - window.innerHeight;
+  scrollProgress.style.width = `${(scrollTop / docHeight) * 100}%`;
+
+  navbar.classList.toggle('scrolled', scrollTop > 20);
+  backToTop.classList.toggle('visible', scrollTop > 400);
+});
+
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 hamburger.addEventListener('click', () => {
@@ -25,9 +37,9 @@ navLinks.querySelectorAll('a').forEach(link => {
 // TYPED TEXT — Hero subtitle animation
 // =============================================
 const phrases = [
-  'Analista QA',
-  'Testing Automation',
-  'Software Developer',
+  'Full-Stack Developer',
+  'AI-First Builder',
+  'Vibe Coder',
   'Problem Solver',
 ];
 
@@ -126,6 +138,24 @@ function copyEmail() {
     }, 2000);
   });
 }
+
+// =============================================
+// ORB MOUSE PARALLAX — subtle depth effect
+// =============================================
+const orb1 = document.querySelector('.orb-1');
+const orb2 = document.querySelector('.orb-2');
+
+document.addEventListener('mousemove', (e) => {
+  const x = (e.clientX / window.innerWidth  - 0.5) * 2;
+  const y = (e.clientY / window.innerHeight - 0.5) * 2;
+
+  if (orb1) {
+    orb1.style.transform = `translate(${x * 18}px, ${y * 14}px)`;
+  }
+  if (orb2) {
+    orb2.style.transform = `translate(${x * -12}px, ${y * -10}px)`;
+  }
+});
 
 // =============================================
 // SMOOTH HOVER on code window
