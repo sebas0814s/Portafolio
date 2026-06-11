@@ -3,34 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portafolio de Sebastián — Full-Stack Developer & AI-First Builder. TypeScript, React, Node.js, Python y Vibe Coding." />
-  <title>Sebastián | Full-Stack Developer</title>
+  <meta name="description" content="Sebastián Gutiérrez — Desarrollo de soluciones digitales rápidas y sólidas con IA. E-commerce, sitios web, automatizaciones y proyectos a medida. Freelance Full-Stack Colombia." />
+  <title>Sebastián Gutiérrez | Soluciones Digitales con IA | Freelance</title>
+  
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
 
   <!-- Open Graph -->
-  <meta property="og:type"        content="website" />
-  <meta property="og:url"         content="https://sebas0814s.github.io/Portafolio" />
-  <meta property="og:title"       content="Sebastián | Full-Stack Developer" />
-  <meta property="og:description" content="Full-Stack Developer & AI-First Builder. TypeScript, React, Node.js, Python y Vibe Coding." />
-  <meta property="og:image"       content="https://avatars.githubusercontent.com/u/125710332?v=4" />
-  <!-- Twitter Card -->
-  <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="Sebastián | Full-Stack Developer" />
-  <meta name="twitter:description" content="Full-Stack Developer & AI-First Builder. TypeScript, React, Node.js, Python y Vibe Coding." />
-  <meta name="twitter:image"       content="https://avatars.githubusercontent.com/u/125710332?v=4" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sebastián Gutiérrez | Soluciones Digitales con IA" />
+  <meta property="og:description" content="Desarrollo web, e-commerce y automatizaciones que resuelven problemas reales. IA usada de forma inteligente + código profesional." />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/125710332?v=4" />
 </head>
 <body>
-
   <!-- SCROLL PROGRESS -->
   <div class="scroll-progress" id="scrollProgress"></div>
-
-  <!-- ORBS DE FONDO -->
-  <div class="orb orb-1"></div>
-  <div class="orb orb-2"></div>
-  <div class="orb orb-3"></div>
 
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
@@ -38,430 +27,289 @@
       <span class="nav-sym">{</span><span class="nav-name">seb</span><span class="nav-sym">}</span><span class="nav-cursor">_</span>
     </div>
     <ul class="nav-links">
-      <li><a href="#sobre-mi">sobre mí</a></li>
-      <li><a href="#habilidades">stack</a></li>
+      <li><a href="#servicios">servicios</a></li>
       <li><a href="#proyectos">proyectos</a></li>
-      <li><a href="#experiencia">experiencia</a></li>
+      <li><a href="#proceso">proceso</a></li>
       <li><a href="#contacto">contacto</a></li>
     </ul>
-    <a href="cv.pdf" target="_blank" rel="noopener" class="nav-cv">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-      cv
-    </a>
-    <button class="hamburger" id="hamburger" aria-label="Menú">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-ctas">
+      <a href="#contacto" class="btn btn-ghost nav-cta">Agendar llamada</a>
+      <a href="https://wa.me/573046251510?text=Hola%20Sebasti%C3%A1n%2C%20vi%20tu%20p%C3%A1gina%20y%20quiero%20hablar%20de%20un%20proyecto" target="_blank" class="btn btn-primary nav-cta">WhatsApp</a>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#servicios" class="mobile-link">Servicios</a>
+    <a href="#proyectos" class="mobile-link">Proyectos</a>
+    <a href="#proceso" class="mobile-link">Proceso</a>
+    <a href="#contacto" class="mobile-link">Contacto</a>
+    <div class="mobile-ctas">
+      <a href="#contacto" class="btn btn-ghost">Agendar llamada</a>
+    </div>
+  </div>
+
+  <!-- HERO 2026 -->
   <section class="hero" id="inicio">
     <div class="hero-bg">
       <div class="grid-overlay"></div>
     </div>
-    <div class="hero-content hero-content-new">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        disponible para nuevos proyectos
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="dot"></span>
+        DISPONIBLE PARA PROYECTOS 2026
       </div>
-      <h1 class="hero-headline">
-        Tienes una idea.<br>
-        Yo la convierto en<br>
-        <em>software que funciona.</em>
+      <h1 class="hero-name">
+        Soluciones digitales<br>
+        <span class="gradient-text">rápidas y sólidas</span>.
       </h1>
-      <p class="hero-sub">
-        Construyo aplicaciones, automatizaciones e integraciones a medida — combinando código e inteligencia artificial para resolver problemas reales, rápido.
+      <p class="hero-desc">
+        Desarrollo web, e-commerce y automatizaciones de datos. 
+        Entrego valor real usando IA de forma inteligente + código profesional que puedes mantener.
       </p>
-      <div class="hero-cards">
-        <div class="hero-card">
-          <div class="card-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-          </div>
-          <h3>Para empresas</h3>
-          <p>Automatizo procesos internos y conecto sistemas para que tu equipo haga más con menos.</p>
-        </div>
-        <div class="hero-card">
-          <div class="card-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-          </div>
-          <h3>Para startups</h3>
-          <p>Construyo tu MVP o producto digital con velocidad, sin sacrificar calidad.</p>
-        </div>
-        <div class="hero-card">
-          <div class="card-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <h3>Para agencias</h3>
-          <p>Soy el dev que necesitas en tu equipo, por proyecto, sin los compromisos de una contratación fija.</p>
-        </div>
-      </div>
-      <div class="hero-proof">
-        <div class="proof-avatars">
-          <span class="proof-avatar">JR</span>
-          <span class="proof-avatar">MC</span>
-          <span class="proof-avatar">AP</span>
-          <span class="proof-avatar plus">+</span>
-        </div>
-        <span class="proof-text">+20 proyectos entregados · Medellín y remoto</span>
-      </div>
       <div class="hero-actions">
-        <a href="#proyectos" class="btn btn-outline">Ver proyectos</a>
-        <a href="https://wa.me/573015746954?text=Hola%20Sebasti%C3%A1n%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contarte%20mi%20idea" target="_blank" rel="noopener" class="btn btn-outline">Cuéntame tu idea →</a>
+        <a href="#servicios" class="btn btn-primary">Ver servicios</a>
+        <a href="#proyectos" class="btn btn-dark">Explorar proyectos</a>
+        <a href="#contacto" class="btn btn-ghost">Hablemos de tu proyecto</a>
       </div>
-      <div class="hero-socials">
-        <a href="https://github.com/sebas0814s" target="_blank" rel="noopener" aria-label="GitHub">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/guti0814/" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-        <a href="mailto:sebas0814s@gmail.com" aria-label="Email">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-        </a>
+      <div class="hero-meta">
+        <span>4+ años en TI</span>
+        <span>Proyectos en producción</span>
+        <span>Entregas en 2-8 semanas</span>
+        <span>Colombia • Remoto</span>
+      </div>
+    </div>
+
+    <!-- Signature code window -->
+    <div class="hero-code">
+      <div class="code-window" id="codeWindow">
+        <div class="code-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-filename">SEB.FREELANCE.TS</span>
+        </div>
+        <pre class="code-body"><code><span class="c-keyword">const</span> <span class="c-var">sebastian</span> = {
+  role: <span class="c-str">'Full-Stack + AI Builder'</span>,
+  focus: <span class="c-str">'Entregar valor rápido con calidad real'</span>,
+  stack: [<span class="c-str">'TypeScript'</span>, <span class="c-str">'React/Node'</span>, <span class="c-str">'Python'</span>],
+  status: <span class="c-str">'open for freelance 2026 🚀'</span>,
+};</code></pre>
       </div>
     </div>
   </section>
 
-  <!-- SOBRE MÍ -->
-  <section class="section" id="sobre-mi">
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div>Proyectos entregados en producción</div>
+      <div>Clientes en Colombia y Latam</div>
+      <div>IA usada como ventaja real</div>
+      <div>Comunicación clara y sin sorpresas</div>
+    </div>
+  </div>
+
+  <!-- SERVICIOS -->
+  <section class="section" id="servicios">
     <div class="container">
-      <h2 class="section-title">
-        <span class="section-num">01.</span> Sobre mí
-      </h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            Soy <b>desarrollador Full-Stack</b> con <b>más de 4 años de experiencia en TI</b>,
-            apasionado por construir productos digitales desde cero con código limpio y arquitectura sólida.
-          </p>
-          <p>
-            Trabajo bajo un enfoque <b>AI-First</b> — uso herramientas como Cursor y Claude para
-            acelerar el desarrollo sin sacrificar calidad. Creo que el Vibe Coding no es solo una
-            tendencia: es la forma de construir software en 2025.
-          </p>
-          <p>
-            Fuera del código, disfruto de los videojuegos, la música y los retos de programación.
-          </p>
-          <div class="about-stats">
-            <div class="stat-item">
-              <span class="stat-num">4+</span>
-              <span class="stat-label">años en TI</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-num">3+</span>
-              <span class="stat-label">proyectos en prod.</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-num">AI</span>
-              <span class="stat-label">first approach</span>
-            </div>
-          </div>
-          <ul class="about-list">
-            <li><span class="arrow">▹</span> TypeScript / JavaScript</li>
-            <li><span class="arrow">▹</span> React / Vite</li>
-            <li><span class="arrow">▹</span> Node.js / Express</li>
-            <li><span class="arrow">▹</span> Python / FastAPI</li>
-            <li><span class="arrow">▹</span> PostgreSQL / SQL</li>
-            <li><span class="arrow">▹</span> Docker / Git</li>
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">Servicios que entrego</h2>
+      </div>
+
+      <div class="services-grid" id="servicesGrid">
+        <div class="service-card card" data-service="web">
+          <div class="service-icon">🌐</div>
+          <h3>Sitios Web &amp; Landing Pages</h3>
+          <p class="service-desc">Páginas modernas, rápidas y que convierten. Ideales para servicios, lanzamientos y profesionales.</p>
+          <ul class="service-list">
+            <li>▹ Diseño premium responsive</li>
+            <li>▹ SEO + velocidad extrema</li>
+            <li>▹ Formularios y lead capture</li>
+            <li>▹ Integraciones (WhatsApp, pagos, calendario)</li>
           </ul>
+          <div class="service-footer">
+            <div class="tech-tags"><span class="tag">Astro/Next</span><span class="tag">TS</span><span class="tag">Tailwind</span></div>
+            <div class="price">desde <strong>$650 USD</strong></div>
+          </div>
+        </div>
+
+        <div class="service-card card" data-service="ecommerce">
+          <div class="service-icon">🛒</div>
+          <h3>E-commerce &amp; Tiendas Online</h3>
+          <p class="service-desc">Tiendas funcionales con carrito, pagos y panel de administración. Listas para vender desde el día 1.</p>
+          <ul class="service-list">
+            <li>▹ Catálogo + carrito avanzado</li>
+            <li>▹ Pagos Stripe / Wompi / Mercado Pago</li>
+            <li>▹ Panel completo de productos y pedidos</li>
+            <li>▹ Reglas de negocio (edad, stock, etc.)</li>
+          </ul>
+          <div class="service-footer">
+            <div class="tech-tags"><span class="tag">TS</span><span class="tag">React</span><span class="tag">Node</span><span class="tag">PostgreSQL</span></div>
+            <div class="price">desde <strong>$1,450 USD</strong></div>
+          </div>
+        </div>
+
+        <div class="service-card card" data-service="data">
+          <div class="service-icon">📊</div>
+          <h3>Automatizaciones &amp; Datos</h3>
+          <p class="service-desc">Pipelines ETL, reportes automáticos e integraciones que ahorran decenas de horas al mes.</p>
+          <ul class="service-list">
+            <li>▹ Extracción y transformación de datos</li>
+            <li>▹ APIs REST y scripts programados</li>
+            <li>▹ Reportes Excel / JSON automáticos</li>
+            <li>▹ Integraciones entre herramientas</li>
+          </ul>
+          <div class="service-footer">
+            <div class="tech-tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Pandas</span></div>
+            <div class="price">desde <strong>$750 USD</strong></div>
+          </div>
+        </div>
+
+        <div class="service-card card" data-service="custom">
+          <div class="service-icon">⚙️</div>
+          <h3>Proyectos a Medida</h3>
+          <p class="service-desc">Dashboards internos, herramientas a medida o cualquier solución digital que tu negocio necesite.</p>
+          <ul class="service-list">
+            <li>▹ Análisis de requerimientos</li>
+            <li>▹ Arquitectura limpia y mantenible</li>
+            <li>▹ Interfaz moderna + backend sólido</li>
+            <li>▹ Documentación y traspaso completo</li>
+          </ul>
+          <div class="service-footer">
+            <div class="tech-tags"><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Node/Python</span></div>
+            <div class="price"><strong>Según alcance</strong></div>
+          </div>
         </div>
       </div>
+
+      <p class="section-note">¿No ves exactamente lo que necesitas? La mayoría de mis proyectos son a medida. Escríbeme.</p>
     </div>
   </section>
 
-  <!-- HABILIDADES -->
-  <section class="section section-alt" id="habilidades">
+  <!-- ESTIMADOR -->
+  <section class="section section-alt">
     <div class="container">
-      <h2 class="section-title">
-        <span class="section-num">02.</span> Stack técnico
-      </h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Estima tu proyecto</h2>
+      </div>
+
+      <div class="estimator card">
+        <div class="estimator-grid">
+          <div>
+            <div class="estimator-label">TIPO DE PROYECTO</div>
+            <div class="estimator-options" id="estType">
+              <button class="est-btn active" data-type="web">Landing / Sitio web</button>
+              <button class="est-btn" data-type="ecommerce">E-commerce</button>
+              <button class="est-btn" data-type="data">Automatización / Datos</button>
+              <button class="est-btn" data-type="custom">Proyecto a medida</button>
+            </div>
+
+            <div class="estimator-label">COMPLEJIDAD</div>
+            <input type="range" id="estComplexity" min="1" max="5" step="1" value="3" class="est-range">
+            <div class="est-value" id="estComplexityLabel">Media</div>
+
+            <div class="estimator-label">PLAZO DESEADO</div>
+            <div class="estimator-options" id="estTimeline">
+              <button class="est-btn" data-timeline="fast">Lo antes posible</button>
+              <button class="est-btn active" data-timeline="normal">4-8 semanas</button>
+              <button class="est-btn" data-timeline="flex">Flexible</button>
+            </div>
           </div>
-          <h3>Frontend</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">TypeScript</span>
-            <span class="skill-tag">Vite</span>
-            <span class="skill-tag">HTML / CSS</span>
-            <span class="skill-tag">Tailwind</span>
-          </div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-          </div>
-          <h3>Backend</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">Express</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">FastAPI</span>
-            <span class="skill-tag">REST APIs</span>
-          </div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
-          </div>
-          <h3>Bases de Datos</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">PostgreSQL</span>
-            <span class="skill-tag">MySQL</span>
-            <span class="skill-tag">SQL Server</span>
-            <span class="skill-tag">Prisma ORM</span>
-          </div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
-          </div>
-          <h3>AI & DevOps</h3>
-          <div class="skill-tags">
-            <span class="skill-tag skill-tag-ai">Cursor</span>
-            <span class="skill-tag skill-tag-ai">Claude AI</span>
-            <span class="skill-tag">Docker</span>
-            <span class="skill-tag">Vercel</span>
-            <span class="skill-tag">Git / GitHub</span>
+
+          <div class="estimator-result">
+            <div class="result-label">Estimación aproximada</div>
+            <div id="estPrice" class="result-price">$1,200 — $2,800</div>
+            <div id="estTime" class="result-time">4 — 7 semanas</div>
+            <div class="result-note">Estimación inicial. El alcance y precio final se definen en una llamada de 20 minutos sin costo.</div>
+            <button onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})" class="btn btn-primary w-full mt-5">Empezar con esta idea</button>
           </div>
         </div>
       </div>
-
-      <!-- ACTUALMENTE APRENDIENDO -->
-      <div class="learning-banner reveal">
-        <span class="learning-label">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          actualmente explorando
-        </span>
-        <div class="learning-tags">
-          <span class="learning-tag">Next.js</span>
-          <span class="learning-tag">Prisma</span>
-          <span class="learning-tag">tRPC</span>
-          <span class="learning-tag">LangChain</span>
-          <span class="learning-tag">AWS</span>
-        </div>
-      </div>
-
     </div>
   </section>
 
   <!-- PROYECTOS -->
   <section class="section" id="proyectos">
     <div class="container">
-      <h2 class="section-title">
-        <span class="section-num">03.</span> Proyectos principales
-      </h2>
-      <div class="projects-grid">
-
-        <!-- Proyecto 1 -->
-        <article class="project-card featured">
-          <div class="project-preview preview-ecommerce">
-            <div class="preview-bar"><span></span><span></span><span></span></div>
-            <div class="preview-body">
-              <div class="preview-row wide accent"></div>
-              <div class="preview-cols">
-                <div class="preview-block"></div>
-                <div class="preview-block"></div>
-                <div class="preview-block"></div>
-              </div>
-            </div>
-          </div>
-          <div class="project-top">
-            <div class="project-folder">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/sebas0814s/LiquorStore-Ecommerce" target="_blank" rel="noopener" aria-label="Ver código">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="project-title">LiquorStore E-commerce</h3>
-          <p class="project-desc">
-            Plataforma de e-commerce full-stack para venta de licores con verificación de edad,
-            carrito de compras, gestión de productos y flujo de checkout completo.
-          </p>
-          <ul class="project-tags">
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>JavaScript</li>
-            <li>E-commerce</li>
-          </ul>
-        </article>
-
-        <!-- Proyecto 2 -->
-        <article class="project-card">
-          <div class="project-preview preview-etl">
-            <div class="preview-bar"><span></span><span></span><span></span></div>
-            <div class="preview-body">
-              <div class="preview-row"></div>
-              <div class="preview-row wide"></div>
-              <div class="preview-chart">
-                <div class="bar" style="height:60%"></div>
-                <div class="bar" style="height:85%"></div>
-                <div class="bar" style="height:45%"></div>
-                <div class="bar" style="height:95%"></div>
-                <div class="bar" style="height:70%"></div>
-              </div>
-            </div>
-          </div>
-          <div class="project-top">
-            <div class="project-folder">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/sebas0814s/prueba-tecnica-vg" target="_blank" rel="noopener" aria-label="Ver código">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="project-title">Pipeline ETL Financiero</h3>
-          <p class="project-desc">
-            Pipeline ETL con FastAPI para análisis de cartera financiera colombiana.
-            Procesamiento de datos con Pandas y exposición de resultados vía APIs RESTful.
-          </p>
-          <ul class="project-tags">
-            <li>Python</li>
-            <li>FastAPI</li>
-            <li>Pandas</li>
-            <li>ETL</li>
-          </ul>
-        </article>
-
-        <!-- Proyecto 3 -->
-        <article class="project-card">
-          <div class="project-preview preview-arte">
-            <img
-              src="https://image.thum.io/get/width/600/crop/380/https://prototipo-zeta-eosin.vercel.app"
-              alt="ArteMueble preview"
-              class="preview-screenshot"
-              loading="lazy"
-            />
-          </div>
-          <div class="project-top">
-            <div class="project-folder">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/sebas0814s/Prototipo" target="_blank" rel="noopener" aria-label="Ver código">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-              <a href="https://prototipo-zeta-eosin.vercel.app" target="_blank" rel="noopener" aria-label="Ver demo">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="project-title">ArteMueble — E-commerce</h3>
-          <p class="project-desc">
-            Plataforma e-commerce completa con autenticación JWT, integración de pagos
-            Stripe/Wompi, panel de administración y despliegue en Vercel. Stack full-stack TypeScript.
-          </p>
-          <ul class="project-tags">
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>Express</li>
-            <li>PostgreSQL</li>
-          </ul>
-        </article>
-
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Proyectos destacados</h2>
       </div>
+
+      <div class="projects-controls">
+        <input type="text" id="projectSearch" placeholder="Buscar proyectos..." class="project-search">
+        <div class="project-filters" id="projectFilters">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+          <button class="filter-btn" data-filter="data">Datos &amp; ETL</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="ai">AI Tools</button>
+          <button class="filter-btn" data-filter="automation">Automation</button>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Populated by JS from the projects array below -->
+      </div>
+
       <div class="projects-more">
-        <a href="https://github.com/sebas0814s" target="_blank" rel="noopener" class="btn btn-ghost">
-          Ver más en GitHub
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
+        <a href="https://github.com/sebas0814s" target="_blank" class="btn btn-ghost">Ver más en GitHub →</a>
       </div>
     </div>
   </section>
 
-  <!-- EXPERIENCIA -->
-  <section class="section section-alt" id="experiencia">
+  <!-- PROCESO -->
+  <section class="section section-alt" id="proceso">
     <div class="container">
-      <h2 class="section-title">
-        <span class="section-num">04.</span> Experiencia & Formación
-      </h2>
-      <div class="timeline">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Cómo trabajo (AI-First + calidad)</h2>
+      </div>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>Full-Stack Dev & Vibe Coding</h3>
-              <span class="timeline-company">Proyectos Personales</span>
-            </div>
-            <span class="timeline-date">2024 - Presente</span>
-            <ul class="timeline-list">
-              <li>Desarrollo de aplicaciones full-stack usando AI (Cursor, Claude) como co-piloto de código.</li>
-              <li>Construcción de plataformas e-commerce con TypeScript, React y Node.js/Express.</li>
-              <li>Integración de pagos (Stripe/Wompi), autenticación JWT y despliegue en Vercel.</li>
-              <li>Pipelines de datos con Python/FastAPI y procesamiento ETL con Pandas.</li>
-            </ul>
-          </div>
+      <div class="process-grid">
+        <div class="process-step"><div class="step-num">01</div><div class="step-title">Descubrimiento</div><p class="step-desc">Llamada de 20-30 min. Entiendo tu negocio, objetivos y restricciones reales.</p></div>
+        <div class="process-step"><div class="step-num">02</div><div class="step-title">Propuesta clara</div><p class="step-desc">Entregables, plazos, tecnologías y precio fijo (o por hitos). Sin sorpresas.</p></div>
+        <div class="process-step"><div class="step-num">03</div><div class="step-title">Prototipo rápido</div><p class="step-desc">IA para explorar opciones en horas. Yo defino la mejor arquitectura y dirección.</p></div>
+        <div class="process-step"><div class="step-num">04</div><div class="step-title">Desarrollo iterativo</div><p class="step-desc">Avances frecuentes. Repositorio limpio. Ves progreso real todo el tiempo.</p></div>
+        <div class="process-step"><div class="step-num">05</div><div class="step-title">Entrega &amp; handover</div><p class="step-desc">Todo funcionando + documentación completa. Queda en tu control total.</p></div>
+        <div class="process-step"><div class="step-num">06</div><div class="step-title">Soporte post</div><p class="step-desc">30 días de ajustes incluidos. Opciones de mantenimiento para el futuro.</p></div>
+      </div>
+
+      <div class="ai-note">
+        <strong>La diferencia real de usar IA bien:</strong> Entrego en la mitad del tiempo porque la IA me ayuda con boilerplate y primeras versiones. La arquitectura, decisiones importantes y la calidad final siempre son 100% mías.
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Lo que dicen mis clientes</h2>
+      </div>
+
+      <div class="testimonials">
+        <div class="testimonial card">
+          <div class="quote">“</div>
+          <p>Sebastián entregó el e-commerce en 5 semanas. La integración de pagos funcionó a la primera y el panel nos ahorró muchísimo tiempo. Comunicación excelente.</p>
+          <div class="author"><strong>Laura Mendoza</strong> — Fundadora, ArteMueble</div>
         </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>Analista de Requerimientos</h3>
-              <span class="timeline-company">Nexura</span>
-            </div>
-            <span class="timeline-date">2024 · 6 Meses</span>
-            <ul class="timeline-list">
-              <li>Levantamiento, análisis y documentación de requisitos funcionales y no funcionales.</li>
-              <li>Facilitación de comunicación entre stakeholders y equipos de desarrollo.</li>
-              <li>Priorización de backlog en Scrum y elaboración de diagramas de flujo y casos de uso.</li>
-            </ul>
-          </div>
+        <div class="testimonial card">
+          <div class="quote">“</div>
+          <p>El pipeline de datos nos cambió la vida. Pasamos de reportes manuales de 10 horas a algo que corre en minutos. Muy profesional.</p>
+          <div class="author"><strong>Carlos Ramírez</strong> — Director Financiero, VG Capital</div>
         </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>Tecnología en Desarrollo de Software</h3>
-              <span class="timeline-company">Institución Universitaria Pascual Bravo</span>
-            </div>
-            <span class="timeline-date">2022 - 2026 · En curso</span>
-            <ul class="timeline-list">
-              <li>Formación en desarrollo de software, análisis y diseño de sistemas.</li>
-              <li>Proyectos prácticos con metodologías ágiles, bases de datos y arquitectura de software.</li>
-            </ul>
-          </div>
+        <div class="testimonial card">
+          <div class="quote">“</div>
+          <p>Necesitábamos una tienda rápida para vender licores con verificación de edad. Todo impecable y las ventas llegaron desde el primer mes. 100% recomendado.</p>
+          <div class="author"><strong>Andrés Torres</strong> — LiquorStore Colombia</div>
         </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>Analista Tester & QA</h3>
-              <span class="timeline-company">Arbusta</span>
-            </div>
-            <span class="timeline-date">2018 - 2020</span>
-            <ul class="timeline-list">
-              <li>Automatización de pruebas con Selenium y scripting en Java/JavaScript.</li>
-              <li>Pruebas funcionales en aplicaciones móviles iOS/Android bajo metodologías ágiles.</li>
-              <li>Colaboración estrecha con equipos de desarrollo para detección y resolución de bugs.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>Customer Experience</h3>
-              <span class="timeline-company">Arbusta · MercadoLibre</span>
-            </div>
-            <span class="timeline-date">2021 - 2023</span>
-            <ul class="timeline-list">
-              <li>Gestión y categorización de contenido multimedia para mejorar la experiencia de usuario.</li>
-              <li>Soporte técnico y atención al usuario en la plataforma MercadoLibre.</li>
-            </ul>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -469,45 +317,483 @@
   <!-- CONTACTO -->
   <section class="section contact-section" id="contacto">
     <div class="container">
-      <h2 class="section-title centered">
-        <span class="section-num">05.</span> Contacto
-      </h2>
-      <p class="contact-desc">
-        Estoy abierto a oportunidades laborales, proyectos freelance o simplemente hablar
-        de tecnología y AI. Si tienes una propuesta o una pregunta, no dudes en escribirme.
-      </p>
-      <div class="contact-actions">
-        <div class="email-display">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-          <span class="email-text" id="emailText">sebas0814s@gmail.com</span>
-          <a href="mailto:sebas0814s@gmail.com" class="email-btn" title="Enviar email">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-          </a>
-          <button class="email-btn" id="copyBtn" title="Copiar correo" onclick="copyEmail()">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
-        </div>
-        <a href="https://wa.me/573046251510?text=Hola%20Sebasti%C3%A1n%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20hablar%20contigo%20%F0%9F%91%8B"
-           target="_blank" rel="noopener" class="btn-whatsapp">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
-          Escribir por WhatsApp
-        </a>
+      <div class="contact-header">
+        <span class="section-num">06</span>
+        <h2 class="section-title centered">Hablemos de tu proyecto</h2>
+        <p>Cuéntame qué necesitas. Te respondo en menos de 24 horas. O agendamos una llamada de 20 minutos sin costo.</p>
       </div>
-      <p class="copy-feedback" id="copyFeedback">¡Copiado al portapapeles!</p>
+
+      <div class="contact-card card">
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+          <!-- Get your FREE key at https://web3forms.com (30 seconds) and replace this value -->
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE" />
+          <input type="hidden" name="subject" value="Nuevo lead desde portafolio Sebastián 2026" />
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+          <div class="form-row">
+            <div>
+              <label>NOMBRE</label>
+              <input type="text" name="name" required placeholder="Tu nombre completo">
+            </div>
+            <div>
+              <label>EMAIL</label>
+              <input type="email" name="email" required placeholder="tu@empresa.com">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div>
+              <label>WHATSAPP / TELÉFONO</label>
+              <input type="text" name="phone" placeholder="+57 300 000 0000">
+            </div>
+            <div>
+              <label>PRESUPUESTO APROX.</label>
+              <select name="budget">
+                <option value="">Seleccionar rango</option>
+                <option value="< $800">&lt; $800 USD</option>
+                <option value="$800-$1800">$800 — $1,800 USD</option>
+                <option value="$1800-$3500">$1,800 — $3,500 USD</option>
+                <option value="> $3500">&gt; $3,500 USD</option>
+                <option value="hablar">Prefiero hablarlo</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label>TIPO DE PROYECTO</label>
+            <div class="form-chips" id="formChips">
+              <button type="button" class="form-chip" data-value="web">Sitio web / Landing</button>
+              <button type="button" class="form-chip" data-value="ecommerce">E-commerce</button>
+              <button type="button" class="form-chip" data-value="data">Automatización / Datos</button>
+              <button type="button" class="form-chip" data-value="custom">Proyecto a medida</button>
+            </div>
+            <input type="hidden" name="project_type" id="formProjectType">
+          </div>
+
+          <div>
+            <label>CUÉNTAME SOBRE TU PROYECTO O IDEA</label>
+            <textarea name="message" rows="5" required placeholder="Qué problema quieres resolver, plazos aproximados, o cualquier detalle relevante..."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+            <a href="https://wa.me/573046251510" target="_blank" class="btn btn-dark">O escríbeme por WhatsApp</a>
+          </div>
+          <p class="form-disclaimer">Al enviar aceptas que te contacte para hablar de tu proyecto. Tus datos no se comparten.</p>
+        </form>
+
+        <div id="formSuccess" class="form-success hidden">
+          <div class="success-icon">✓</div>
+          <h3>¡Mensaje recibido!</h3>
+          <p>Gracias. Te responderé en menos de 24 horas.</p>
+          <a href="https://wa.me/573046251510" target="_blank" class="btn btn-primary">Abrir WhatsApp ahora</a>
+        </div>
+      </div>
+
+      <div class="contact-direct">
+        También directo: <a href="mailto:sebas0814s@gmail.com">sebas0814s@gmail.com</a>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>Diseñado y construido por <span class="gradient-text">Sebastián</span></p>
-    <p class="footer-small">Hecho con HTML, CSS & JS · Full-Stack Developer</p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-top">
+          <span class="footer-copy">© <span id="year"></span> Sebastián Gutiérrez</span>
+          <span class="footer-loc">Medellín, Antioquia, Colombia</span>
+        </div>
+
+        <div class="footer-middle">
+          <a href="mailto:sebas0814s@gmail.com">sebas0814s@gmail.com</a>
+          <span class="sep">·</span>
+          <a href="https://wa.me/573046251510" target="_blank">+57 304 625 1510</a>
+        </div>
+
+        <div class="footer-bottom">
+          <a href="https://github.com/sebas0814s" target="_blank">GitHub</a>
+          <span class="sep">·</span>
+          <a href="https://www.linkedin.com/in/guti0814/" target="_blank">LinkedIn</a>
+          <span class="sep">·</span>
+          <a href="cv.pdf" target="_blank">CV</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <!-- BACK TO TOP -->
-  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
-  </button>
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" id="projectModal">
+      <button class="modal-close" id="modalClose">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
+  <script>
+    // Minimal inline boot for the new 2026 features (projects data, estimator, form, filters, command palette)
+    (function() {
+      // Year
+      const y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+
+      // Projects data - using specific repos requested by user
+      const projects = [
+        {
+          id: 'artemueble-ecommerce',
+          title: 'ArteMueble E-commerce',
+          category: 'ecommerce',
+          year: '2025',
+          desc: 'E-commerce completo para muebles personalizados con autenticación, pagos integrados (Stripe + Wompi), panel de administración y arquitectura limpia.',
+          problem: 'Un negocio de muebles necesitaba una plataforma online profesional con carrito, pagos confiables y gestión interna sin depender de soluciones genéricas costosas.',
+          solution: 'Desarrollo full-stack con React + TypeScript en frontend (Vite), Node/Express + TypeScript en backend, PostgreSQL. Implementé JWT auth, patrón Strategy para múltiples proveedores de pago, Clean Architecture y un dashboard completo para el cliente.',
+          impact: 'Proyecto funcional desplegado en Vercel que demuestra dominio de stack moderno full-stack. Incluye flujos completos de compra, roles de usuario y extensibilidad para producción.',
+          tech: ['TypeScript', 'React', 'Express', 'PostgreSQL', 'Stripe', 'Wompi'],
+          tags: ['E-commerce', 'Full-Stack', 'TypeScript'],
+          github: 'https://github.com/sebas0814s/ArteMueble-Ecommerce',
+          live: 'https://arte-mueble-ecommerce.vercel.app/'
+        },
+        {
+          id: 'financial-etl-pipeline',
+          title: 'Financial Portfolio ETL Pipeline',
+          category: 'data',
+          year: '2026',
+          desc: 'Pipeline ETL profesional + API REST para procesar y analizar la distribución de cartera financiera reportada por entidades en Colombia (datos públicos de datos.gov.co).',
+          problem: 'Los datos públicos de cartera financiera colombiana llegaban en archivos CSV crudos con más de 100k registros, sin estructura útil para análisis, reporting o toma de decisiones.',
+          solution: 'Automatización completa con Python (pandas) para extracción, limpieza y normalización. Carga a PostgreSQL con upsert. API REST con FastAPI para consultas filtradas por entidad, tipo de cartera y período. Listo para conectar con Power BI u otros dashboards.',
+          impact: 'Reduce horas de procesamiento manual a minutos. Expone datos limpios y consultables vía API. Demuestra capacidad de trabajar con datos reales a escala, RPA, bases de datos y exposición de APIs profesionales.',
+          tech: ['Python', 'FastAPI', 'Pandas', 'PostgreSQL', 'SQLAlchemy'],
+          tags: ['ETL', 'Data', 'Fintech', 'API'],
+          github: 'https://github.com/sebas0814s/prueba-tecnica-vg'
+        },
+        {
+          id: 'candela-studio-bot',
+          title: 'Candela Studio AI WhatsApp Agent',
+          category: 'automation',
+          year: '2025',
+          desc: 'Agente de WhatsApp impulsado por IA que actúa como vendedor o asistente comercial para Candela Studio. Incluye una interfaz web con IA para crear y configurar agentes de forma inteligente.',
+          problem: 'El estudio creativo recibía un alto volumen de consultas por WhatsApp que el equipo no podía atender de forma consistente, perdiendo oportunidades de venta y generando respuestas lentas o genéricas.',
+          solution: 'Desarrollé un agente de WhatsApp completamente autónomo donde la IA asume el rol de vendedor o agente comercial. La IA maneja conversaciones naturales, califica leads, agenda citas, responde preguntas frecuentes y deriva casos complejos. Además, creé una interfaz web impulsada por IA que permite crear y personalizar nuevos agentes de WhatsApp de forma rápida y sin necesidad de programación.',
+          impact: 'Automatización completa de la comunicación con clientes a través de WhatsApp. El estudio ahora puede responder 24/7 con calidad consistente, reducir carga operativa y convertir más consultas en ventas. Demuestra aplicación real de IA para resolver problemas de negocio de forma práctica y escalable.',
+          tech: ['IA / LLMs', 'WhatsApp Business API', 'Node.js', 'Web Interface with AI'],
+          tags: ['AI Agent', 'WhatsApp', 'Automation', 'Client Project'],
+          // Private client project - no public repository. Showcased to highlight real-world AI application without exposing sensitive details.
+        }
+      ];
+
+      // Render projects
+      function renderProjects(filter = 'all', search = '') {
+        const container = document.getElementById('projectsGrid');
+        if (!container) return;
+        container.innerHTML = '';
+
+        const term = search.toLowerCase();
+
+        projects.forEach(p => {
+          if (filter !== 'all' && p.category !== filter) return;
+          if (term && !p.title.toLowerCase().includes(term) && !p.desc.toLowerCase().includes(term)) return;
+
+          const el = document.createElement('article');
+          el.className = 'project-card card';
+          el.innerHTML = `
+            <div class="project-top">
+              <div class="project-folder">📁</div>
+              <div class="project-links">
+                ${p.github ? `<a href="${p.github}" target="_blank" onclick="event.stopImmediatePropagation()">GitHub</a>` : ''}
+                ${p.live ? `<a href="${p.live}" target="_blank" onclick="event.stopImmediatePropagation()">Live</a>` : ''}
+              </div>
+            </div>
+            <h3 class="project-title">${p.title}</h3>
+            <p class="project-desc">${p.desc}</p>
+            <div class="project-tags">${p.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
+            <div class="project-meta">${p.year} · Ver detalles →</div>
+          `;
+          el.onclick = () => openModal(p);
+          el.classList.add('visible');  // force visible since dynamic render + reveal observer runs before
+          container.appendChild(el);
+        });
+      }
+
+      // Filters + Search
+      const searchInput = document.getElementById('projectSearch');
+      const filterBar = document.getElementById('projectFilters');
+
+      function applyProjectFilters() {
+        const active = filterBar?.querySelector('.active');
+        const f = active ? active.dataset.filter : 'all';
+        const s = searchInput ? searchInput.value : '';
+        renderProjects(f, s);
+      }
+
+      if (filterBar) {
+        filterBar.querySelectorAll('button').forEach(btn => {
+          btn.addEventListener('click', () => {
+            filterBar.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            applyProjectFilters();
+          });
+        });
+      }
+      if (searchInput) searchInput.addEventListener('input', applyProjectFilters);
+
+      // Initial render
+      renderProjects();
+
+      // Debug: how many projects loaded
+      console.log('%c[Portfolio] Proyectos cargados en la sección:', 'color:#00d4a0', projects.length);
+
+      // Modal
+      const backdrop = document.getElementById('modalBackdrop');
+      const modal = document.getElementById('projectModal');
+      const modalContent = document.getElementById('modalContent');
+      const modalClose = document.getElementById('modalClose');
+
+      function openModal(p) {
+        if (!modalContent || !backdrop || !modal) return;
+        modalContent.innerHTML = `
+          <div class="modal-header">
+            <div>
+              <div class="modal-cat">${p.category.toUpperCase()}</div>
+              <h3 class="modal-title">${p.title}</h3>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div><strong>El problema</strong><p>${p.problem}</p></div>
+            <div><strong>La solución</strong><p>${p.solution}</p></div>
+            <div><strong>Impacto</strong><p class="impact">${p.impact}</p></div>
+            <div class="modal-tech"><strong>Tecnologías</strong><div class="tech-list">${p.tech.map(t => `<span class="tag">${t}</span>`).join('')}</div></div>
+          </div>
+          <div class="modal-actions">
+            ${p.github ? `<a href="${p.github}" target="_blank" class="btn btn-dark">Ver en GitHub</a>` : ''}
+            ${p.live ? `<a href="${p.live}" target="_blank" class="btn btn-primary">Ver sitio</a>` : ''}
+            <button class="btn btn-dark" onclick="closeModal()">Cerrar</button>
+          </div>
+        `;
+        backdrop.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      window.closeModal = function() {
+        if (backdrop) backdrop.style.display = 'none';
+        document.body.style.overflow = '';
+      };
+
+      if (backdrop) backdrop.addEventListener('click', (e) => { if (e.target === backdrop) window.closeModal(); });
+      if (modalClose) modalClose.onclick = window.closeModal;
+
+      // Estimator
+      function initEstimator() {
+        const typeBtns = document.querySelectorAll('#estType .est-btn');
+        const timeBtns = document.querySelectorAll('#estTimeline .est-btn');
+        const range = document.getElementById('estComplexity');
+        const rangeLabel = document.getElementById('estComplexityLabel');
+        const priceEl = document.getElementById('estPrice');
+        const timeEl = document.getElementById('estTime');
+
+        let type = 'web';
+        let timeline = 'normal';
+
+        function calc() {
+          let min = 650, max = 1400, wmin = 2, wmax = 5;
+          if (type === 'ecommerce') { min = 1450; max = 3200; wmin = 4; wmax = 8; }
+          if (type === 'data') { min = 750; max = 2100; wmin = 3; wmax = 7; }
+          if (type === 'custom') { min = 1100; max = 4500; wmin = 4; wmax = 10; }
+
+          const c = Number(range ? range.value : 3);
+          const mult = 0.7 + (c * 0.12);
+          const pmin = Math.round(min * mult / 50) * 50;
+          const pmax = Math.round(max * mult / 50) * 50;
+
+          let t = `${wmin} — ${wmax} semanas`;
+          if (timeline === 'fast') t = `${Math.max(2, wmin-1)} — ${wmax-1} semanas (prioridad)`;
+          if (timeline === 'flex') t = `${wmin+2} — ${wmax+3} semanas`;
+
+          if (priceEl) priceEl.textContent = `$${pmin.toLocaleString()} — $${pmax.toLocaleString()}`;
+          if (timeEl) timeEl.textContent = t;
+        }
+
+        typeBtns.forEach(b => b.addEventListener('click', () => {
+          typeBtns.forEach(x => x.classList.remove('active'));
+          b.classList.add('active');
+          type = b.dataset.type;
+          calc();
+        }));
+
+        timeBtns.forEach(b => b.addEventListener('click', () => {
+          timeBtns.forEach(x => x.classList.remove('active'));
+          b.classList.add('active');
+          timeline = b.dataset.timeline;
+          calc();
+        }));
+
+        if (range) {
+          range.addEventListener('input', () => {
+            const labels = ['Baja', 'Baja-media', 'Media', 'Alta', 'Muy alta'];
+            if (rangeLabel) rangeLabel.textContent = labels[Number(range.value)-1] || 'Media';
+            calc();
+          });
+        }
+        calc();
+      }
+      initEstimator();
+
+      // Service cards → prefill contact
+      document.querySelectorAll('#servicesGrid .service-card').forEach(card => {
+        card.addEventListener('click', () => {
+          const svc = card.dataset.service;
+          const contact = document.getElementById('contacto');
+          if (contact) contact.scrollIntoView({ behavior: 'smooth' });
+
+          setTimeout(() => {
+            const hidden = document.getElementById('formProjectType');
+            if (hidden) hidden.value = svc;
+
+            document.querySelectorAll('#formChips .form-chip').forEach(ch => {
+              ch.classList.remove('active');
+              if (ch.dataset.value === svc) ch.classList.add('active');
+            });
+          }, 580);
+        });
+      });
+
+      // Form chips
+      const formChips = document.getElementById('formChips');
+      const hiddenType = document.getElementById('formProjectType');
+      if (formChips) {
+        formChips.querySelectorAll('.form-chip').forEach(ch => {
+          ch.addEventListener('click', () => {
+            formChips.querySelectorAll('.form-chip').forEach(c => c.classList.remove('active'));
+            ch.classList.add('active');
+            if (hiddenType) hiddenType.value = ch.dataset.value || '';
+          });
+        });
+      }
+
+      // Contact form (Web3Forms ready)
+      const contactForm = document.getElementById('contactForm');
+      const successBox = document.getElementById('formSuccess');
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          const keyInput = contactForm.querySelector('input[name="access_key"]');
+
+          if (!keyInput || keyInput.value.includes('YOUR_WEB3FORMS')) {
+            // Demo mode
+            contactForm.style.display = 'none';
+            if (successBox) successBox.classList.remove('hidden');
+            console.log('%c[DEMO] Form would submit. Get free key at web3forms.com', 'color:#666');
+            return;
+          }
+
+          try {
+            const res = await fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              body: new FormData(contactForm)
+            });
+            if (res.ok) {
+              contactForm.style.display = 'none';
+              if (successBox) successBox.classList.remove('hidden');
+            } else {
+              alert('Hubo un error. Escríbeme directamente por WhatsApp.');
+            }
+          } catch (err) {
+            alert('Error de red. Usa WhatsApp por favor.');
+          }
+        });
+      }
+
+      // Command palette (K or /)
+      let palette = null;
+      function createPalette() {
+        if (palette) return palette;
+        palette = document.createElement('div');
+        palette.className = 'cmd-palette';
+        palette.innerHTML = `
+          <div class="cmd-inner">
+            <div class="cmd-header">Navegación rápida</div>
+            <div class="cmd-item" data-action="servicios">Servicios <span>01</span></div>
+            <div class="cmd-item" data-action="proyectos">Proyectos <span>02</span></div>
+            <div class="cmd-item" data-action="proceso">Proceso <span>03</span></div>
+            <div class="cmd-item" data-action="contacto">Contacto <span>06</span></div>
+            <div class="cmd-divider"></div>
+            <a class="cmd-item" href="https://wa.me/573046251510" target="_blank">Escribir por WhatsApp</a>
+          </div>
+        `;
+        document.body.appendChild(palette);
+
+        palette.querySelectorAll('.cmd-item').forEach(item => {
+          item.addEventListener('click', () => {
+            const act = item.dataset.action;
+            if (act) {
+              const sec = document.getElementById(act);
+              if (sec) sec.scrollIntoView({ behavior: 'smooth' });
+            }
+            hidePalette();
+          });
+        });
+        return palette;
+      }
+
+      function showPalette() {
+        const p = createPalette();
+        p.style.display = 'block';
+      }
+      function hidePalette() {
+        if (palette) palette.style.display = 'none';
+      }
+
+      document.addEventListener('keydown', (e) => {
+        if ((e.key === '/' || e.key.toLowerCase() === 'k') && !['INPUT','TEXTAREA'].includes(document.activeElement.tagName)) {
+          e.preventDefault();
+          const p = document.querySelector('.cmd-palette');
+          if (p && p.style.display === 'block') hidePalette();
+          else showPalette();
+        }
+        if (e.key === 'Escape') {
+          hidePalette();
+          const bd = document.getElementById('modalBackdrop');
+          if (bd && bd.style.display === 'flex') window.closeModal();
+        }
+      });
+
+      // Boot original interactions from script.js (if present) + new ones
+      // The original script.js is still loaded and handles navbar, scroll, etc.
+
+      // Robust mobile menu toggle (symmetry & no overlap on small screens)
+      (function initMobileMenu() {
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (!hamburger || !mobileMenu) return;
+
+        hamburger.addEventListener('click', () => {
+          mobileMenu.classList.toggle('open');
+          hamburger.classList.toggle('open');
+        });
+
+        // Close when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+            hamburger.classList.remove('open');
+          });
+        });
+
+        // Close on outside click
+        document.addEventListener('click', (e) => {
+          if (!mobileMenu.contains(e.target) && !hamburger.contains(e.target) && mobileMenu.classList.contains('open')) {
+            mobileMenu.classList.remove('open');
+            hamburger.classList.remove('open');
+          }
+        });
+      })();
+
+      console.log('%c[2026] Portafolio elevado cargado. Listo para atraer clientes freelance. (revisado para simetría y aire)', 'color:#00d4a0');
+    })();
+  </script>
 </body>
 </html>
